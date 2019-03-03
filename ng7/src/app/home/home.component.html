@@ -1,0 +1,14 @@
+
+<!-- <h1 [ngStyle]="{ 
+  'color': h1Style ? 'yellow' : 'green', 
+  'font-size': !h1Style ? '1em' : '4em'
+}">Home</h1> -->
+
+<h2>Home</h2>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p> {{ user.first_name }} {{ user.last_name }} </p>
+  </li>
+</ul>

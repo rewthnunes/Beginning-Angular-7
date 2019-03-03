@@ -1,3 +1,78 @@
-<p>
-  about works!
-</p>
+<h2>About</h2>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p> {{ user.first_name }} {{ user.last_name }} </p>
+  </li>
+</ul>
+
+<h3>Angulare News 7</h3>
+<div>
+  <strong> <span class="title1"> Melhor performance </span> </strong>
+  <br>
+  <p> Uma aplicação SPA consiste de alguns poucos arquivos, após ser construída para publicação. 
+    Nesses arquivos é concentrado/compactado todo o código necessário para fazer o cliente 
+    funcionar. Assim, no primeiro acesso precisamos aguardar que tudo seja baixado de uma única 
+    vez para que a aplicação possa ser utilizada. Isso pode ser um problema quando lembramos que 
+    grande parte do tráfego na internet vem de dispositivos móveis que, em geral, costumam acessar
+     a internet em baixa velocidade de conexão.</p>
+  <p>
+      Para mantermos o tamanho da nossa aplicação sobre controle, o Angular conta com a função de 
+      Bundle Budgets. Isto é, quando construímos nossa aplicação, recebemos alertas quando o seu 
+      tamanho excede um limite pré-determinado. Este recurso já existia no Angular e agora se 
+      tornou padrão. Na construção de uma aplicação que ultrapasse 2 MB receberemos um alerta e em 
+      aplicações que ultrapassem 5 MB seremos impedidos de prosseguir com a construção. É claro que 
+      esses valores são personalizáveis, e podemos modificá-los no arquivo angular.json do nosso 
+      projeto.
+  </p>   
+  <hr>
+
+  <strong> <span class="title1"> Nolidades Para Template </span> </strong>
+  <br>
+  <p>
+      Embora pouca coisa tenha mudado no Angular Material, a biblioteca de componentes que implementa o 
+      Material Design, alguns novos elementos interessantes foram adicionados ao CDK da biblioteca.
+      O CDK, ou kit de componente, possui diversos componentes que oferecem funcionalidades para nossas 
+      aplicações sem a definição de estilos, como textareas que são redimensionados automaticamente e 
+      ferramentas de acessibilidade para o uso de teclas de atalho e mais.
+      Com o Angular 7 foram lançados outros dois componentes: Drag and Drop e Virtual Scrolling
+  </p>
+  <hr>
+
+  <strong> <span class="title1"> Drag and Drop </span> </strong>
+  <br>
+  <p>
+      O novo componente de Drag and Drop facilita o desenvolvimento de funcionalidades “arrasta e solta”. 
+      Com ele podemos criar desde elementos que podem ser arrastados livremente a listas verticais e horizontais reordenáveis.
+  </p>
+  <hr>
+
+  <strong> <span class="title1"> Virtual Scrolling </span> </strong>
+  <br>
+  <p>
+      Com o componente de Virtual Scrolling podemos construir grandes listas roláveis sem nenhuma perda de desempenho. 
+      Para isso, o componente renderiza apenas os elementos que estão na parte visível da lista e destrói aqueles que 
+      já saíram da parte visível.
+  </p>
+  <hr>
+
+  <strong> <span class="title1"> Angular CLI </span> </strong>
+  <br>
+  <p>
+      A ferramenta de linha de comando também mudou. Agora, sempre que criamos um novo projeto, o CLI pergunta se 
+      desejamos adicionar o módulo de rotas e se desejamos utilizar algum processador CSS, como SASS ou LESS.
+  </p>
+  <hr>
+
+  <strong> <span class="title1"> Dependências </span> </strong>
+  <br>
+  <p>
+      Algumas dependências utilizadas pelo Angular também foram atualizadas:
+
+      TypeScript: A versão do TypeScript, o Superset do JavaScript utilizado pelo Angular foi atualizada para a versão 3.1, que conta apenas com algumas pequenas mudanças em relação a declaração de propriedades em funções.
+      RxJS: O RxJS, a biblioteca que provem ao Angular, dentre outras coisas, Observables, foi atualizada para a versão 6.3. Essa nova versão implementou apenas correções.
+      NodeJS: Agora é possível utilizar o Angular e o Angular CLI na versão 10 do Node.js, embora ainda seja totalmente compatível com a versão 8.
+  </p>
+
+</div>
